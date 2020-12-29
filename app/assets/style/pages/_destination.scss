@@ -1,0 +1,95 @@
+// destination
+.destination {
+    .country-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: $middle-md;
+    }
+    .country {
+        width: 31.532%;
+        padding-top: 7.028%;
+        background-position: center center;
+        background-size: cover;
+        border-radius: $small-md;
+        position: relative;
+        transition: .5s;
+        &:nth-child(n+4) {
+            margin-top: $middle-md;
+        }
+        &.active {
+            padding-top: 15%;
+        }
+        @include pad {
+            width: 47.743%;
+            padding-top: 11.285%;
+            &:nth-child(n+3) {
+                margin-top: $middle-md;
+            }
+            &.active {
+                padding-top: 23%;
+            }
+        }
+        @include mobile {
+            width: 100%;
+            padding-top: 23%;
+            &:nth-child(n+1) {
+                margin-top: $small-md;
+            }
+            &.active {
+                padding-top: 50%;
+            }
+        }
+    }
+    .country-1 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Osaka.jpg');
+    }
+    .country-2 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Kyoto.jpg');
+    }
+    .country-3 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Reykjavic.jpg');
+    }
+    .country-4 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Paris.jpg');
+    }
+    .country-5 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Roman.jpg');
+    }
+    .country-6 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Bangkok.jpg');
+    }
+    .content {
+        background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(255,255,255,.05) 100%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: $small $middle-md;
+        border-radius: $small-md;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text {
+        text-align: left;
+    }
+    .contry-name {
+        color: #FFFFFF98;
+        font: normal normal bold 12px/12px Open Sans;
+    }
+    .county {
+        color: $color-white;
+        font: normal normal bold 24px/36px Raleway;
+    }
+    .material-icons {
+        color: $color-white;
+        cursor: pointer;
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+}

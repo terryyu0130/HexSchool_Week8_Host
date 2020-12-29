@@ -1,0 +1,557 @@
+---
+title: index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- header -->
+<div class="header">
+    <h1 class="logo"><a href="index.html">Logo</a></h1>
+    <ul class="menu">
+        <li><a href="#" class="language">
+                <span class="material-icons">
+                    language
+                </span>
+                <span class="material-icons arrow">
+                    arrow_drop_down
+                </span>
+            </a></li>
+        <li><a href="#" class="default">Signup</a></li>
+        <li><a href="login.html" class="default">Login</a></li>
+    </ul>
+    <ul class="menu-mb dn-lg">
+        <li><a href="#" class="language">
+                <span class="material-icons">
+                    language
+                </span>
+                <span class="material-icons arrow">
+                    arrow_drop_down
+                </span>
+            </a></li>
+        <li><a href="#" class="default">Signup</a></li>
+    </ul>
+    <a href="login.html" class="default dn-lg default-mb">Login</a>
+    <span class="material-icons dn-lg ham-mb ham-btn">
+        dehaze
+    </span>
+</div>
+
+<!-- wrap -->
+<div class="wrap-1">
+    <!-- banner -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="banner banner-1 swiper-slide">
+                <h2 class="title">Discover your ideal hotel</h2>
+            </div>
+            <div class="banner banner-2 swiper-slide">
+                <h2 class="title">Slide banner successfully</h2>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <!-- navbar-1 -->
+    <div class="navbar-1">
+        <ul class="menu">
+            <li class="nav location">
+                <span class="material-icons">
+                    location_on
+                </span>
+                <h3 class="title">Destination</h3>
+                <ul class="list location-list">
+                    <li class="country">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <div class="text">
+                            <h3 class="place">Bangkok</h3>
+                            <h5 class="country-name">Thailand</h5>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <div class="text">
+                            <h3 class="place">Osaka</h3>
+                            <h5 class="country-name">Japan</h5>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <div class="text">
+                            <h3 class="place">Roma</h3>
+                            <h5 class="country-name">Italy</h5>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <div class="text">
+                            <h3 class="place">Paris</h3>
+                            <h5 class="country-name">London</h5>
+                        </div>
+                    </li>
+                    <li class="country">
+                        <span class="material-icons">
+                            star
+                        </span>
+                        <div class="text">
+                            <h3 class="place">Reykjavik</h3>
+                            <h5 class="country-name">Iceland</h5>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav date">
+                <span class="material-icons">
+                    date_range
+                </span>
+                <h3 class="title">Check-in / Check-out</h3>
+                <div class="room__calendar_wrap">
+                    <div class="list room__calendar">
+                        <!-- left -->
+                        <div class="room__calendar__left">
+                            <div class="room__calendar__month">
+                                <a href="#" class="arrow_left">
+                                    <span class="material-icons arrow arrow__icon_left">
+                                        keyboard_arrow_left
+                                    </span>
+                                </a>
+                                <p class="month">JUNE 2020</p>
+                            </div>
+                            <table class="room__calendar__table">
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                </tr>
+
+                                <tr>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td class="text-primary">9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                </tr>
+
+                                <tr>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td class="bg-primary text-white border_left">17</td>
+                                    <td class="bg-info">18</td>
+                                    <td class="bg-info">19</td>
+                                    <td class="bg-primary text-white border_right">20</td>
+                                </tr>
+
+                                <tr>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                </tr>
+
+                                <tr>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- right -->
+                        <div class="room__calendar__right">
+                            <div class="room__calendar__month">
+                                <p class="month">JULY 2020</p>
+                                <a href="#" class="arrow_right">
+                                    <span class="material-icons arrow arrow__icon_right">
+                                        keyboard_arrow_right
+                                    </span>
+                                </a>
+                            </div>
+                            <table class="room__calendar__table">
+
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+
+                                <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                </tr>
+
+                                <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                </tr>
+
+                                <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav person">
+                <span class="material-icons">
+                    person
+                </span>
+                <h3 class="title">Guests</h3>
+                <ul class="list room-classify">
+                    <li class="item">
+                        <h4 class="old">Adult</h4>
+                        <div class="increase">
+                            <span class="material-icons">
+                                remove
+                            </span>
+                            <p class="number">2</p>
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h4 class="old">Child</h4>
+                        <div class="increase">
+                            <span class="material-icons">
+                                remove
+                            </span>
+                            <p class="number">0</p>
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h4 class="old">Room</h4>
+                        <div class="increase">
+                            <span class="material-icons">
+                                remove
+                            </span>
+                            <p class="number">1</p>
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav search">
+                <a href="page2.html" class="btn">SEARCH</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- topic -->
+    <div class="container">
+        <div class="topic">
+            <h2 class="card-title">Top Choices</h2>
+            <ul class="place-selection">
+                <li class="place-wrap border-primary"><a href="#" class="place text-primary">
+                        Bali
+                        <span class="count text-primary">128</span>
+                    </a></li>
+                <li class="place-wrap"><a href="#" class="place">
+                        Okinawa
+                        <span class="count">67</span>
+                    </a></li>
+                <li class="place-wrap"><a href="#" class="place">
+                        Taipei
+                        <span class="count">53</span>
+                    </a></li>
+            </ul>
+            <ul class="card-group">
+                <li class="card">
+                    <div class="pic pic-1"></div>
+                    <div class="cotent">
+                        <h3 class="title">Hotel Aqua</h3>
+                        <div class="comment">
+                            <span class="material-icons">
+                                star star star star star
+                            </span>
+                            <span class="point">5.0</span>
+                            <span class="review">・2k reviews</span>
+                        </div>
+                        <p class="price">TWD 2,480
+                            <span class="ori-price">TWD 3,980</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="pic pic-2"></div>
+                    <div class="cotent">
+                        <h3 class="title">Mr. Kawasaki Inn</h3>
+                        <div class="comment">
+                            <span class="material-icons">
+                                star star star star
+                            </span>
+                            <span class="point">4.0</span>
+                            <span class="review">・500 reviews</span>
+                        </div>
+                        <p class="price">TWD 3,380</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="pic pic-3"></div>
+                    <div class="cotent">
+                        <h3 class="title">Weekly Paradise</h3>
+                        <div class="comment">
+                            <span class="material-icons">
+                                star star star star
+                            </span>
+                            <span class="point">4.0</span>
+                            <span class="review">・470 reviews</span>
+                        </div>
+                        <p class="price">TWD 4,780</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="pic pic-4"></div>
+                    <div class="cotent">
+                        <h3 class="title">Beast Hotel</h3>
+                        <div class="comment">
+                            <span class="material-icons">
+                                star star star star
+                            </span>
+                            <span class="point">4.0</span>
+                            <span class="review">・283 reviews</span>
+                        </div>
+                        <p class="price">TWD 1,980</p>
+                    </div>
+                </li>
+            </ul>
+            <span class="material-icons arrow">
+                arrow_drop_down_circle
+            </span>
+        </div>
+    </div>
+
+    <!-- destination -->
+    <div class="container">
+        <div class="destination">
+            <h2 class="card-title">Popular Destinations</h2>
+            <ul class="country-group">
+                <li class="country country-1">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">JAPAN</p>
+                            <h3 class="county">Osaka</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+                <li class="country country-2">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">JAPAN</p>
+                            <h3 class="county">Kyoto</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+                <li class="country country-3">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">ICELAND</p>
+                            <h3 class="county">Reykjavík</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+                <li class="country country-4">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">FRANCE</p>
+                            <h3 class="county">Paris</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+                <li class="country country-5">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">ITALY</p>
+                            <h3 class="county">Roma</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+                <li class="country country-6">
+                    <div class="content">
+                        <div class="text">
+                            <p class="contry-name">THAILAND</p>
+                            <h3 class="county">Bangkok</h3>
+                        </div>
+                        <span class="material-icons">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- inspiration -->
+    <div class="container">
+        <div class="inspiration ">
+            <h2 class="card-title">
+                Get Inspiration
+                <a href="#" class="more">SEE MORE</a>
+            </h2>
+            <ul class="card-group">
+                <li class="card">
+                    <div class="landscape landscape-1"></div>
+                    <div class="contet">
+                        <h3 class="title">The fifth most visited country</h3>
+                        <p class="text">Italy is the fifth most visited country in the world, with a total of 52.3
+                            million…</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="landscape landscape-2"></div>
+                    <div class="contet">
+                        <h3 class="title">Visit Thailand for Bangkok</h3>
+                        <p class="text">Asian tourists primarily visit Thailand for Bangkok and the historical,
+                            natural, and…</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="landscape landscape-3"></div>
+                    <div class="contet">
+                        <h3 class="title">Lord of the Rings Tour</h3>
+                        <p class="text">The national cuisine has been described as Pacific Rim, incorporating the
+                            native Māori…</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- subscribe-1 -->
+    <div class="subscribe-1">
+        <div class="content">
+            <h2 class="title">Subscribe for Exclusive Offer</h2>
+            <div class="submit-group">
+                <input type="email" class="email" placeholder="Your email address">
+                <input type="submit" class="submit" value="SUBSCRIBE">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="footer">
+            <div class="copyright">
+                &copy; 2020 ALOHA, Inc. All rights reserved.
+            </div>
+            <ul class="FAQ">
+                <li class="item">FAQs</li>
+                <li class="item">Terms of use</li>
+                <li class="item">Privacy policy</li>
+            </ul>
+            <ul class="setting">
+                <li><a href="#" class="language">
+                        <span class="material-icons">
+                            language
+                        </span>
+                        <span class="text">English</span>
+                        <span class="material-icons arrow">
+                            arrow_drop_down
+                        </span>
+                    </a></li>
+                <li><a href="#" class="money">
+                        <span class="material-icons">
+                            attach_money
+                        </span>
+                        <span class="text">TWD</span>
+                        <span class="material-icons arrow">
+                            arrow_drop_down
+                        </span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+</div>

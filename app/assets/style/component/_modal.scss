@@ -1,0 +1,70 @@
+//Modal
+.notification-bar {
+    width: 1280px;
+    position: fixed;
+    bottom: -105px;
+    transition: .5s;
+    &.active {
+        bottom: -1px;
+    }
+    @include pad {
+        width: 100%;
+        bottom: -200px;
+    }
+}
+.notification {
+    padding: $middle-md 6.641%;
+    background-color: $color-secondary;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: $small-md $small-md 0 0;
+    @include mobile {
+        .text {
+            width: 100%;
+            text-align: right;
+        }
+        .btn-group {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: $middle-md;
+        }
+    }
+    .total {
+        color: #FFFFFF98;
+        font: normal normal normal 12px/12px Open Sans;
+    }
+    .price {
+        color: $color-white;
+        font: normal normal bold 24px/36px Raleway;
+        margin-top: $small-sm;
+    }
+    .btn {
+        padding: $small 32px;
+        border-radius: $small-sm;
+        font: normal normal bold 16px/24px Open Sans;
+        color: $color-white;
+        border: 1px solid transparent;
+        transition: .5s;
+        &:hover {
+            background-color: $color-info;
+            color: $color-primary;
+        }
+        @include mobile {
+            width: 48%;
+            text-align: center;
+        }
+    }
+    .cancel {
+        border: 1px solid $color-white;
+    }
+    .reserve {
+        background-color: $color-primary;
+        margin-left: $small-md;
+        @include mobile {
+            margin-left: 0;
+        }
+    }
+}

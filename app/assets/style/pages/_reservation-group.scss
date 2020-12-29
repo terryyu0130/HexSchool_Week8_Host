@@ -1,0 +1,125 @@
+// reservation-group
+.reservation-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .detail {
+        width: 47.947%;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    .title {
+        color: $color-secondary;
+        font: normal normal bold 32px/48px Raleway;
+        margin-bottom: $middle-md;
+        @include mobile {
+            font: normal normal bold 24px/36px Raleway;
+            margin: $middle-md 0;
+        }
+    }
+    label {
+        color: $color-gray;
+        font: normal normal normal 16px/24px Open Sans;
+        & + label {
+            margin-top: $small;
+        }
+    }
+    .name,
+    .email,
+    .phone {
+        width: 100%;
+        padding: $middle-sm 0;
+        border-radius: $small-sm;
+        outline: none;
+        border: 1px solid #00000060;
+        margin-top: $small-sm;
+    }
+    .reserve-btn {
+        width: 100%;
+        padding: $small 0;
+        color: $color-white;
+        background-color: $color-primary;
+        border-radius: $small-sm;
+        margin-top: $middle-md;
+        display: block;
+        text-align: center;
+        font: normal normal bold 16px/24px Open Sans;
+        transition: 0.5s;
+        &:hover {
+            color: $color-white;
+            background-color: $color-gray;
+        }
+    }
+    .note {
+        width: 100%;
+        text-align: center;
+        margin-top: $small-md;
+        color: $color-primary;
+        font: normal normal normal 14px/24px Roboto;
+    }
+    .price-group {
+        width: 47.947%;
+        padding: $middle-md;
+        background-color: $color-info;
+        border-radius: $small-md;
+        @include mobile {
+            padding: $small;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            border-radius: 0 0 $small-md $small-md;
+            display: none;
+        }
+    }
+    .booking,
+    .summary {
+        padding-bottom: $middle-md;
+        border-bottom: 1px solid $color-white;
+        @include mobile {
+            padding-bottom: $small;
+        }
+    }
+    .summary {
+        padding-top: $middle-md;
+        @include mobile {
+            padding-top: $small;
+        }
+    }
+    .subtitle {
+        color: $color-secondary;
+        font: normal normal bold 16px/24px Open Sans;
+        margin-bottom: $small;
+    }
+    .booking-info,
+    .summary-info {
+        width: 100%;
+        color: $color-gray;
+        font: normal normal normal 14px/21px Open Sans;
+        & + .booking-info,
+        & + .summary-info {
+            margin-top: $small-md;
+        }
+    }
+    .summary-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .total {
+        padding-top: $middle-md;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            padding-top: $small;
+        }
+    }
+    .total-info {
+        color: $color-gray;
+        font: normal normal normal 16px/24px Open Sans;
+    }
+    .total-price {
+        color: $color-secondary;
+        font: normal normal bold 16px/24px Open Sans;
+    }
+}

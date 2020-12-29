@@ -1,0 +1,69 @@
+// subscribe-1
+.subscribe-1 {
+    height: 320px;
+    background-color: $color-info;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+        height: 150px;
+    }
+    .content {
+        text-align: center;
+        @include pad {
+            width: 95%;
+        }
+        @include mobile {
+            width: 90%;
+        }
+    }
+    .title {
+        color: $color-secondary;
+        font: normal normal 800 48px/64px Raleway;
+        @include mobile {
+            font: normal normal bold 24px/36px Raleway;
+        }
+    }
+    .submit-group {
+        display: flex;
+        justify-content: center;
+        margin-top: $middle-md;
+        @include mobile {
+            width: 100%;
+            margin-top: $small;
+        }
+    }
+    input {
+        border: none;
+        outline: none;
+    }
+    .email {
+        width: 58.252%;
+        padding: 20.5px $middle-sm;
+        background-color: $color-white;
+        border-radius: $small-sm 0 0 $small-sm;
+        &::placeholder {
+            color: $color-gray;
+            font: normal normal normal 16px/24px Open Sans;
+        }
+        @include mobile {
+            width: 65%;
+        }
+    }
+    .submit {
+        width: 22.406%;
+        color: $color-white;
+        font: normal normal bold 16px/24px Open Sans;
+        background-color: $color-primary;
+        border-radius: 0 $small-sm $small-sm 0;
+        transition: .5s;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-gray;
+        }
+        @include mobile {
+            width: 35%;
+        }
+    }
+}

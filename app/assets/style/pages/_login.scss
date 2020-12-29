@@ -1,0 +1,166 @@
+//back-image
+.back-image {
+    width: 63.673%;
+    height: 100vh;
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/login.jpg');
+    background-position: left center;
+    background-size: cover;
+    position: relative;
+    @include pad {
+        width: 100%;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+
+//login-group
+.login-group {
+    width: 100%;
+    padding: 0 6.641%;
+    position: absolute;
+    top: 0;
+}
+
+//login-header
+.login-header {
+    padding: $middle-md 0;
+    @include mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .dn-lg {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+}
+
+//login-banner
+.login-banner {
+    width: 100%;
+    margin-top: 104px;
+    display: flex;
+    justify-content: space-between;
+    @include pad {
+        margin-top: $middle-md;
+    }
+    .slogan {
+        @include pad {
+            display: none;
+        }
+        width: 65.75%;
+        .title {
+            width: 80%;
+            color: $color-secondary;
+            font: normal normal 800 48px/64px Raleway;
+        }
+        .subtitle {
+            color: $color-gray;
+            font: normal normal normal 14px/21px Open Sans;
+            margin-top: $small;
+        }
+    }
+    .login-form {
+        width: 34.25%;
+        padding-left: 30px;
+        @include pad {
+            width: 49.551%;
+            padding-left: 0;
+            margin: 0 auto;
+        }
+        @include mobile {
+            width: 100%;
+        }
+        .title {
+            color: $color-secondary;
+            font: normal normal bold 32px/48px Raleway;
+        }
+        label {
+            display: block;
+            margin-top: $small;
+            color: $color-gray;
+            font: normal normal normal 16px/24px Open Sans;
+        }
+        .email,
+        .password {
+            width: 100%;
+            padding: 18.5px 0;
+            margin-top: $small-sm;
+            border-radius: $small-sm;
+            border: 1px solid #00000060;
+            outline: none;
+        }
+        .remind {
+            margin-top: $middle-md;
+            color: $color-gray;
+            font: normal normal normal 12px/18px Open Sans;
+        }
+        .text-primary {
+            color: $color-primary;
+        }
+        .saved {
+            margin-top: $small;
+            display: flex;
+            align-items: center;
+            .text {
+                margin-left: $small-sm;
+                color: $color-gray;
+                font: normal normal normal 16px/24px Open Sans;
+            }
+        }
+        .login-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: $middle-sm 0;
+            color: $color-white;
+            background-color: $color-primary;
+            border-radius: $small-sm;
+            margin-top: 32px;
+            transition: .5s;
+            &:hover {
+                color: $color-white;
+                background-color: $color-gray;
+            }
+        }
+        .noaccount {
+            width: 100%;
+            text-align: center;
+            margin-top: $small-md;
+            color: $color-gray;
+            font: normal normal normal 14px/21px Open Sans;
+        }
+        .signup {
+            color: $color-primary;
+            font: normal normal bold 14px/21px Open Sans;
+        }
+    }
+}
+
+// location
+.location-site {
+    position: absolute;
+    left: 6.641%;
+    bottom: $middle-md;
+    display: flex;
+    align-items: center;
+    padding: $small-md $small;
+    color: $color-white;
+    background-color: $color-secondary;
+    @include pad {
+        width: 25%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .material-icons {
+        font-size: 18px;
+    }
+    .site {
+        margin-top: $small-sm;
+        margin-left: $small-md;
+        font: normal normal normal 14px/21px Open Sans;
+    }
+}

@@ -1,0 +1,197 @@
+// navbar-1
+.navbar-1 {
+    margin: 0 14%;
+    background-color: $color-info;
+    border-radius: $small-md;
+    position: relative;
+    z-index: 1;
+    margin-top: -3.5%;
+    @include pad {
+        margin-top: -7%;
+    }
+    @include mobile {
+        margin: -14% 5% 0;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: $middle-md;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        border-radius: $small-sm;
+        font: normal normal normal 16px/24px Open Sans;
+        position: relative;
+        cursor: pointer;
+    }
+    .location,
+    .date,
+    .person {
+        width: 26.557%;
+        background-color: $color-white;
+        padding: $small 0 $small $small;
+        @include pad {
+            width: 100%;
+        }
+    }
+    .date,
+    .person {
+        @include pad {
+            margin-top: $small;
+        }
+    }
+    .search {
+        width: 14.423%;
+        background-color: $color-primary;
+        color: $color-white;
+        padding: $small 0;
+        transition: .5s;
+        @include pad {
+            width: 100%;
+            margin-top: $small;
+        }
+        &:hover {
+            background-color: $color-muted;
+        }
+        .btn {
+            width: 100%;
+            display: block; 
+            text-align: center;
+            color: $color-white;
+            font: normal normal bold 16px/24px Open Sans;
+        }
+    }
+    .title {
+        margin-left: $small;
+        color: $color-gray;
+    }
+
+    // list
+    .list {
+        background-color: $color-white;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        border-radius: $small-sm;
+        box-shadow: 3px 3px 6px $color-muted;
+        z-index: 99;
+    }
+    //location-list
+    .location-list {
+        width: 100%;
+        display: none;
+        .country {
+            display: flex;
+            padding: $small-md $small;
+            transition: .5s;
+            cursor: pointer;
+            &:hover {
+                background-color: $color-info;
+            }
+        }
+        .text {
+            margin-left: $small-md;
+        }
+        .place {
+            color: $color-secondary;
+            font: normal normal normal 16px/24px Open Sans;
+        }
+        .country-name {
+            color: $color-gray;
+            font: normal normal normal 14px/21px Open Sans;
+        }
+    }
+    
+    //room-calendar
+    .room__calendar_wrap {
+        display: none;
+    }
+    .room__calendar {
+        width: 275%;
+        display: flex;
+        justify-content: space-between;
+        @include pad {
+            width: 120%;
+        }
+        @include mobile {
+            width: 100%;
+            flex-wrap: wrap;
+            position: absolute;
+            z-index: 999;
+        }
+        .room__calendar__left,
+        .room__calendar__right {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: $small 0;
+            @include mobile {
+                width: 100%;
+            }
+        }
+
+        .room__calendar__month {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .arrow,
+            .month {
+                color: $color-secondary;
+                font-size: 16px;
+            }
+
+            .month {
+                font-weight: bold;
+            }
+            .arrow {
+                position: absolute;
+                top: $small-sm;
+            }
+            .arrow__icon_left {
+                left: 0;
+            }
+            .arrow__icon_right {
+                right: 0;
+            }
+        }
+
+        .room__calendar__table {
+            width: 100%;
+            text-align: center;
+            font: normal normal normal 16px/24px Open Sans;
+            font-weight: bold;
+            th {
+                padding: $small-md;
+                color: $color-muted;
+            }
+            td {
+                padding: 10px;
+                color: $color-muted;
+            }
+            .bg-primary {
+                background-color: $color-primary;
+            }
+            .bg-info {
+                background-color: $color-info;
+            }
+            .text-primary {
+                color: $color-primary;
+            }
+            .text-white {
+                color: $color-white;
+            }
+            .border_left {
+                border-radius: $small-sm 0 0 $small-sm;
+            }
+            .border_right {
+                border-radius: 0 $small-sm $small-sm 0;
+            }
+        }
+    }
+}

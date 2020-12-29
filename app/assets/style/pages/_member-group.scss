@@ -1,0 +1,287 @@
+//member-group 
+.member-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .booking {
+        width: 65.767%;
+        @include pad {
+            width: 100%;
+            margin-top: $large-md;
+        }
+    }
+    .status {
+        display: flex;
+        .item {
+            font: normal normal bold 16px/24px Open Sans;
+        }
+        .upcoming {
+            color: $color-primary;
+        }
+        .completed {
+            color: $color-secondary;
+            margin-left: $middle-md;
+        }
+    }
+    .project-group {
+        .project {
+            padding: $middle-md 0;
+            display: flex;
+            flex-wrap: wrap;
+            @include mobile {
+                &+.project {
+                    padding-top: 0;
+                }
+            }
+        }
+        .border-b {
+            border-bottom: 1px solid $color-info;
+            @include mobile {
+                border: none;
+            }
+        }
+        .pic {
+            width: 34.932%;
+            padding-top: 23.974%;
+            background-position: center center;
+            background-size: cover;
+            border-radius: $small-md 0 0 $small-md;
+            @include pad {
+                width: 38%;
+            }
+            @include mobile {
+                width: 100%;
+                padding-top: 70%;
+                border-radius: $small-md $small-md 0 0;
+            }
+        }
+        .pic-1 {
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Rachada1.jpg');
+        }
+        .pic-2 {
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Chatuchack1.jpg');
+        }
+    }
+    .content {
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: $small;
+        @include pad {
+            width: 62%;
+        }
+        @include mobile {
+            width: 100%;
+            background-color: $color-info;
+            border-radius: 0 0 $small-md $small-md;
+        }
+        .book-info {
+            width: 60%;
+            @include pad {
+                width: 70%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+        .list {
+            display: flex;
+            align-items: flex-start;
+            &+.list {
+                margin-top: $small-md;
+            }
+        }
+        .text {
+            margin-left: $small;
+        }
+        .book-title {
+            color: $color-secondary;
+            font: normal normal bold 16px/24px Open Sans;
+        }
+        .book-subtitle {
+            color: $color-gray;
+            font: normal normal normal 14px/21px Open Sans;
+        }
+        .view {
+            width: 40%;
+            text-align: right;
+            color: $color-primary;
+            font: normal normal bold 14px/21px Open Sans;
+            @include pad {
+                width: 30%;
+            }
+            @include mobile {
+                width: 100%;
+                text-align: left;
+                margin-top: $middle-md;
+            }
+        }
+    }
+    .info {
+        width: 31.532%;
+        @include pad {
+            width: 100%;
+            order: -1;
+        }
+        @include mobile {
+            margin-top: $middle-md;
+        }
+    }
+    .title {
+        color: $color-secondary;
+        font: normal normal bold 24px/36px Raleway;
+        margin-bottom: $middle-md;
+        @include mobile {
+            margin-bottom: $small;
+        }
+    }
+    .profile-title {
+        display: flex;
+        align-items: center;
+        .edit {
+            color: $color-primary;
+            font: normal normal bold 14px/21px Open Sans;
+            margin-left: auto;
+        }
+    }
+    .varify-check {
+        display: flex;
+        align-items: center;
+        padding: $small-sm $small-md;
+        border-radius: 13px;
+        color: $color-white;
+        background-color: $color-primary;
+        margin-left: $small-md;
+        @include pad {
+            margin-left: $middle-md;
+        }
+        @include mobile {
+            margin-left: $small-md;
+        }
+        .check {
+            font-size: 18px;
+        }
+        .verify {
+            font: normal normal normal 12px/18px Open Sans;
+            margin-left: $small-sm;
+        }
+    }
+    .profile-content {
+        padding: $middle-md;
+        background-color: $color-info;
+        border-radius: $small-md;
+        @include pad {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include mobile {
+            display: block;
+        }
+        .user {
+            display: flex;
+            justify-content: space-between;
+            @include pad {
+                width: 50%;
+                position: relative;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            .name,
+            .email,
+            .phone {
+                color: $color-gray;
+                font: normal normal normal 14px/21px Open Sans;
+                @include pad {
+                    margin-left: 80px;
+                }
+                @include mobile {
+                    margin-left: 0;
+                }
+            }
+            .email,
+            .phone {
+                margin-top: $small;
+            }
+        }
+        .user-title {
+            color: $color-secondary;
+            font: normal normal bold 16px/24px Open Sans;
+            margin-bottom: $middle-md;
+        }
+        .photo {
+            width: 64px;
+            height: 64px;
+            background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/profile.jpg');
+            background-position: center center;
+            background-size: cover;
+            border-radius: $small-md;
+            @include pad {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto 0;
+            }
+            @include mobile {
+                bottom: auto;
+                left: auto;
+                right: 0;
+            }
+        }
+        .payment {
+            margin-top: $middle-md;
+            @include pad {
+                width: 50%;
+                margin-top: 0;
+            }
+            @include mobile {
+                width: 100%;
+                margin-top: $middle-md;
+            }
+        }
+        .credit-info {
+            display: flex;
+            justify-content: space-between;
+            .credit {
+                width: 48.678%;
+                padding: $small;
+                background-color: $color-white;
+                border-radius: $small-sm;
+            }
+            .number,
+            .name,
+            .duedate {
+                color: $color-gray;
+                font: normal normal normal 14px/21px Open Sans;
+            }
+            .number {
+                @include mobile {
+                    font: normal normal normal 12px/12px Open Sans;
+                }
+            }
+            .name,
+            .duedate {
+                margin-top: $small-sm;
+            }
+            .duedate {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .material-icons {
+                    font-size: 18px;
+                }
+            }
+        }
+        .add-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle {
+            font-size: 32px;
+            color: $color-primary;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+// room-classify
+.room-classify {
+    width: 100%;
+    padding: $small;
+    display: none;
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &+.item {
+            margin-top: $middle-md;
+        }
+    }
+    .old {
+        width: 50%;
+        font: normal normal normal 16px/24px Open Sans;
+    }
+    .increase {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .number {
+        color: $color-gray;
+        font: normal normal normal 16px/24px Open Sans;
+    }
+} 
+
+// card-title
+.card-title {
+    width: 100%;
+    margin-top: 70px;
+    font: normal normal bold 32px/48px Raleway;
+    color: $color-secondary;
+    @include pad {
+        margin-top: $large-md;
+    }
+    @include mobile {
+        font: normal normal bold 24px/36px Raleway;
+    }
+}

@@ -1,0 +1,72 @@
+// inspiration
+.inspiration {
+    overflow-x: hidden;
+    .card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .more {
+        padding: $small-md $small;
+        color: $color-primary;
+        border-radius: $small-sm;
+        border: 1px solid $color-primary;
+        font: normal normal bold 14px/21px Open Sans;
+        transition: .5s;
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+    .card-group {
+        margin: $middle-md 0 72px;
+        display: flex;
+        justify-content: space-between;
+        @include pad {
+            margin: $middle-md 0 $large-md;
+        }
+        @include mobile {
+            width: 240%;
+        }
+    }
+    .card {
+        width: 31.532%;
+        @include pad {
+            width: 30.382%;
+        }
+    }
+    .landscape {
+        padding-top: 75.143%;
+        background-position: center center;
+        background-size: cover;
+        border-radius: $small-md;
+        @include pad {
+            padding-top: 75.24%;
+        }
+    }
+    .landscape-1 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/italy.jpg');
+    }
+    .landscape-2 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/Thailand.jpg');
+    }
+    .landscape-3 {
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week8/NewZealand.jpg');
+    }
+    .title {
+        color: $color-secondary;
+        font: normal normal bold 24px/36px Raleway;
+        margin-top: $middle-md;
+        @include mobile {
+            font: normal normal bold 20px/30px Raleway;
+        }
+    }
+    .text {
+        color: $color-gray;
+        font: normal normal normal 16px/24px Open Sans;
+        margin-top: $small-md;
+        @include mobile {
+            font: normal normal normal 12px/18px Open Sans;
+        }
+    }
+}

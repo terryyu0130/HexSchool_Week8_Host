@@ -1,0 +1,89 @@
+// header
+.member-header {
+    width: 1280px;
+    padding: $middle-md 6.641%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-white;
+    position: fixed;
+    z-index: 99;
+    @include pad {
+        width: 100%;
+        position: relative;
+        padding: $middle-md 5%;
+    }
+    @include mobile {
+        position: fixed;
+        justify-content: center;
+        padding: $small 5%;
+    }
+    .menu {
+        display: flex;
+        @include mobile {
+            display: none;
+        }
+    }
+    .language {
+        display: block;
+        color: $color-secondary;
+    }
+    .dn-lg {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    .menu-mb {
+        display: none;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 56px;
+        background-color: $color-white;
+        z-index: 1;
+        .default {
+            display: block;
+            color: $color-gray;
+            padding: $small 0;
+            font: normal normal normal 16px/19px Roboto;
+        }
+        .language {
+            padding: 12px 0;
+            border-bottom: 1px solid $color-info;
+        }
+    }
+    .default-mb {
+        position: absolute;
+        right: 5%;
+    }
+    .ham-mb {
+        position: absolute;
+        left: 5%;
+        cursor: pointer;
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        margin-left: $large-md;
+    }
+    .avatar {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+    .avatar-mb {
+        display: none;
+        @include mobile {
+            display: block;
+            position: absolute;
+            right: 5%;
+            border: 2px solid $color-primary;
+        }
+    }
+    .name {
+        margin-left: $small-md;
+        color: $color-secondary;
+        font: normal normal normal 16px/19px Roboto;
+    }
+}

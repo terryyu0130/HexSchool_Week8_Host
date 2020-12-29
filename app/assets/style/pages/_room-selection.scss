@@ -1,0 +1,45 @@
+// room-selection
+.room-selection {
+    margin: 72px 0;
+    @include pad {
+        margin: $large-md 0;
+    }
+    @include mobile {
+        margin: $large-md 0 $small;
+    }
+    .title {
+        color: $color-secondary;
+        font: normal normal bold 24px/36px Raleway;
+    }
+    .room-info {
+        width: 57.208%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: $middle-md 0 $large-md;
+        @include pad {
+            width: 100%;
+            justify-content: flex-start;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    .info {
+        color: $color-gray;
+        background-color: $color-info;
+        font: normal normal normal 14px/21px Open Sans;
+        padding: $small-md $small;
+        border-radius: $small-sm;
+        @include pad {
+            &+.info {
+                margin-left: $small-md;
+            }
+        }
+    }
+    .edit {
+        color: $color-primary;
+        font: normal normal bold 16px/24px Open Sans;
+        margin-left: $small-md;
+    }
+}

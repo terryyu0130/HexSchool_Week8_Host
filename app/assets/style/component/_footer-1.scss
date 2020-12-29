@@ -1,0 +1,40 @@
+//footer
+.footer-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $middle-md 0;
+    border-top: 1px solid $color-info;
+    .copyright {
+        width: 50%;
+        color: $color-gray;
+        font: normal normal normal 14px/21px Open Sans;
+        @include pad {
+            width: 50%;
+        }
+        @include mobile {
+            width: 100%;
+            text-align: center;
+            margin-top: $small;
+        }
+    }
+    .FAQ {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include mobile {
+            width: 100%;
+            justify-content: center;
+            order: -1;
+        }
+        .item {
+            color: $color-gray;
+            font: normal normal normal 14px/21px Open Sans;
+            &+.item {
+                margin-left: $middle-md;
+            }
+        }
+    }
+}

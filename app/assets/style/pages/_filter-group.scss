@@ -1,0 +1,35 @@
+// filter-group
+.filter-group {
+    display: none;
+    @include mobile {
+        display: block;
+        margin-top: $small;
+        .title {
+            width: 100%;
+            text-align: center;
+            font: normal normal bold 32px/48px Raleway;
+            color: $color-secondary;
+            position: relative;
+        }
+        .count {
+            position: absolute;
+            color: $color-primary;
+            font: normal normal bold 16px/24px Raleway;
+        }
+        .filter-item {
+            display: flex;
+            justify-content: space-between;
+            .item {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: $small 0;
+                cursor: pointer;
+            }
+            .subtitle {
+                margin-left: $small-md;
+            }
+        }
+    }
+}

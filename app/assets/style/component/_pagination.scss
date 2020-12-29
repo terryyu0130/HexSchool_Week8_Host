@@ -1,0 +1,64 @@
+// pagination
+.pagination-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $middle-md;
+    padding: $small-md $small;
+    background-color: $color-info;
+    border-radius: $small-sm;
+    .dn-lg {
+        display: none;
+    }
+    @include pad {
+        width: 100%;
+        margin-top: 0;
+        padding: 14px $small;
+        .dn-lg {
+            display: block;
+        }
+        .dn-md {
+            display: none;
+        }
+    }
+    @include mobile {
+        margin-top: $small-md;
+        .dn-mb {
+            display: none;
+        }
+    }
+    .pagination {
+        display: flex;
+    }
+    .btn {
+        padding: $small-md $small;
+        font: normal normal bold 16px/24px Open Sans;
+        border: 1px solid transparent;
+        border-radius: $small-sm;
+        transition: 0.5s;
+        @include pad {
+            padding: $small-md $small-md $small-sm $small-md;
+        }
+        &:hover {
+            color: $color-white;
+            background-color: $color-gray;
+        }
+    }
+    .prev {
+        color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+    .next {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+    .page {
+        color: $color-secondary;
+        font: normal normal bold 16px/24px Open Sans;
+        padding: $small-md 14px;
+    }
+    .default {
+        background-color: $color-white;
+        border-radius: 3px;
+    }
+}
